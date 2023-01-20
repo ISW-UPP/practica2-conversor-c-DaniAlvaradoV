@@ -1,0 +1,74 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	char opc;
+	int opc2;
+	float n;
+	cout << "tipo de conversor:Moneda(M),Medida(m),Peso(P):\t";
+	cin >> opc;
+	switch (opc)
+	{
+	case 'M':cout << "en que moneda quieres hacer la conversion Dolar(1),Wones(2),peso colombano(3),dolar candiense(4),peso chileno(5)";
+		cin >> opc2;
+		cout << "Ingresa peso:";
+		cin >> n;
+		switch (opc2)
+		{
+		case 1: cout << n << "pesos mexicanos son:" << n / 19.00 << " Dolar";
+			break;
+		case 2: cout << n << " pesos mexiconos son:" << n / 0.015 << " Wones";
+			break;
+		case 3: cout << n << " pesos mexicanos son:" << n / 0.0041 << " peso colombiano";
+			break;
+		case 4: cout << n << " peso mexicaco son:" << n / 0.071 << " peso canadiense";
+			break;
+		case 5: cout << " peso mexicano son:" << n / 0.023 << "peso chileno";
+			break;
+		}
+		break;
+	case 'm':cout << "la distancia de medida es: pulgadas(1),pie(2),centimetros(3),nanometro(4),años luz(5)." << endl << "seleciona medida";
+		cin >> opc2;
+		cout << "Ingresa medida:";
+		cin >> n;
+		switch(opc2)
+		{
+		case 1: cout << n << " distancia de medida:" << n * 254000 << " pulgadas";
+			break;
+		case 2: cout << n << "distancia de medida:" << n * 3048000 << " pie";
+			break;
+		case 3: cout << n << " distancia de medida:" << n * 10000 << " centimetros";
+			break;
+		case 4: cout << n << "distancia de medida:" << n / 100000000000 << " nanometro ";
+			break;
+		case 5: cout << n << " distamcia de medida:" << n / 0.00000000000001057 << " ano luz";
+			break;
+		}
+		break;
+	case 'P': cout << " transformar peso: toneladas(1), onzas(2), libras(3),microgramos(4),teragramos(5) ." << endl <<"seleccione peso";
+		cin >> opc2;
+		cout << " Ingrese peso:";
+			cin >> n;
+		switch (opc2)
+		{
+		case 1: cout << "ingrese peso:" << n / 1000 << "toneladas";
+			break;
+		case 2: cout << "ingrese peso:" << n * 35.274 << "onzas";
+			break;
+		case 2: cout << "ingrese peso:" << n * 2.205 << "libras";
+			break;
+		case 4: cout << "ingrese peso:" << n * 0.000000001 << "microgramos";
+			break;
+		case 5: cout << "ingrese peso:" << n / 10000000000 << "teragramos";
+			break;
+			
+		
+		}
+
+		
+
+
+
+	}
+}
+}
